@@ -4,6 +4,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <assert.h>
+#include <stdio.h>
 
 char *stringduplicator(char *s, int times){  //convention1   //convention2
     assert(!s);    //coding1
@@ -37,7 +38,7 @@ char *duplicateTheString(char *s, int times)
     if(s == NULL)
         return NULL;   
     assert(times > 0);
-    int len = strlen(*s);  
+    int len = strlen(s);  
     char *out = malloc(sizeof(len) * times + 1 );    
     if (out == NULL)
         return NULL;    
@@ -50,3 +51,13 @@ char *duplicateTheString(char *s, int times)
     return out;   
 }
 
+int main()
+{
+    char* string= "";
+    int times= 3;
+    char* duplication=duplicateTheString(string, times);
+    printf("%s", duplication);
+    return 0;
+}
+
+//need to check if string=NULL case is working correctly

@@ -1,5 +1,9 @@
 //q2.2
-//sorted_lonkes_lists.h
+
+#include <stdbool.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <assert.h>
 
 typedef struct node_t {
     int x;
@@ -14,25 +18,23 @@ int getListLength(Node list);
 bool isListSorted(Node list);
 ErrorCode mergeSortedLists(Node list1, Node list2, Node *mergedOut);
 
-//sorted_lonkes_lists.c
 Node createNode(int value)
 {
-    Note ptr = malloc(ziseof(ptr));
+    Node ptr = malloc(sizeof(ptr));
     if (ptr == NULL)
-        return MEMORY_MEMORY;
-    prt->x = value;
-    prt->next= NULL;
+        return NULL;
+    ptr->x = value;
+    ptr->next= NULL;
     return ptr;
 }
 
-Node destroyList(Node ptr)
+void destroyList(Node ptr)
 {
     while(ptr){
         Node to_delete= ptr;
         ptr= ptr->next;
         free(to_delete);
     }
-    
 }
 
 ErrorCode mergeSortedLists(Node list1, Node list2, Node *mergedOut)
@@ -52,4 +54,6 @@ ErrorCode mergeSortedLists(Node list1, Node list2, Node *mergedOut)
     
     return SUCCESS;
 }
+
+
 
