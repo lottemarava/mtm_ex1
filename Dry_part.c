@@ -52,8 +52,8 @@ char *duplicateTheString(char *s, int times)
 }
 
 //q2.2
-#include <stdlib.h>
 //sorted_lonkes_lists.h
+#include <stdbool.h>
 typedef struct node_t {
     int x;
     struct node_t *next;
@@ -68,4 +68,30 @@ bool isListSorted(Node list);
 ErrorCode mergeSortedLists(Node list1, Node list2, Node *mergedOut);
 
 //sorted_lonkes_lists.c
+#include <assert.h>
+#include <stdlib.h>
+
+static int compareValues(Node list1, Node list2)
+{
+    if(list1->x >= lisrt2->x)
+        return list1->x;
+    return list2->x
+}
+ErrorCode mergeSortedLists(Node list1, Node list2, Node *mergedOut)
+{
+    assert(isListSorted(list1) && isListSorted(list2));
+    mergedOut = malloc(sizeof(*mergedOut));
+    if(getListLength(list1) == 0)
+    {
+        //  coppy list2 to  mergr
+        return EMPTY_LIST;
+    }
+    if(getListLength(list2) == 0)
+    {
+        //  coppy list1 to  mergr
+        return EMPTY_LIST;
+    }
+    
+    return SUCCESS;
+}
 
