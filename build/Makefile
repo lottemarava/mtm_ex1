@@ -128,29 +128,29 @@ my_executable/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_executable.dir\build.make CMakeFiles/my_executable.dir/build
 .PHONY : my_executable/fast
 
-Dry_part_q2.2.obj: Dry_part_q2.2.c.obj
-.PHONY : Dry_part_q2.2.obj
+sorted_linked_list.obj: sorted_linked_list.c.obj
+.PHONY : sorted_linked_list.obj
 
 # target to build an object file
-Dry_part_q2.2.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_executable.dir\build.make CMakeFiles/my_executable.dir/Dry_part_q2.2.c.obj
-.PHONY : Dry_part_q2.2.c.obj
+sorted_linked_list.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_executable.dir\build.make CMakeFiles/my_executable.dir/sorted_linked_list.c.obj
+.PHONY : sorted_linked_list.c.obj
 
-Dry_part_q2.2.i: Dry_part_q2.2.c.i
-.PHONY : Dry_part_q2.2.i
+sorted_linked_list.i: sorted_linked_list.c.i
+.PHONY : sorted_linked_list.i
 
 # target to preprocess a source file
-Dry_part_q2.2.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_executable.dir\build.make CMakeFiles/my_executable.dir/Dry_part_q2.2.c.i
-.PHONY : Dry_part_q2.2.c.i
+sorted_linked_list.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_executable.dir\build.make CMakeFiles/my_executable.dir/sorted_linked_list.c.i
+.PHONY : sorted_linked_list.c.i
 
-Dry_part_q2.2.s: Dry_part_q2.2.c.s
-.PHONY : Dry_part_q2.2.s
+sorted_linked_list.s: sorted_linked_list.c.s
+.PHONY : sorted_linked_list.s
 
 # target to generate assembly for a file
-Dry_part_q2.2.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_executable.dir\build.make CMakeFiles/my_executable.dir/Dry_part_q2.2.c.s
-.PHONY : Dry_part_q2.2.c.s
+sorted_linked_list.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_executable.dir\build.make CMakeFiles/my_executable.dir/sorted_linked_list.c.s
+.PHONY : sorted_linked_list.c.s
 
 # Help Target
 help:
@@ -161,9 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... my_executable
-	@echo ... Dry_part_q2.2.obj
-	@echo ... Dry_part_q2.2.i
-	@echo ... Dry_part_q2.2.s
+	@echo ... sorted_linked_list.obj
+	@echo ... sorted_linked_list.i
+	@echo ... sorted_linked_list.s
 .PHONY : help
 
 

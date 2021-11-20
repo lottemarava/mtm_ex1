@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/my_executable.dir/Dry_part_q2.2.c.obj"
-  "CMakeFiles/my_executable.dir/Dry_part_q2.2.c.obj.d"
+  "CMakeFiles/my_executable.dir/sorted_linked_list.c.obj"
+  "CMakeFiles/my_executable.dir/sorted_linked_list.c.obj.d"
   "libmy_executable.dll.a"
   "my_executable.exe"
   "my_executable.exe.manifest"

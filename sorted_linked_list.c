@@ -1,7 +1,5 @@
-#ifndef SORTED_LINK_LIST
-#define SORTED_LINK_LIST
-
-#include <sorted_linked_list.h>
+#include "sorted_linked_list.h"
+#include <stdbool.h>
 
 //Create new node with a value
 Node createNode(int value)
@@ -14,6 +12,11 @@ Node createNode(int value)
     return ptr;
 }
 
+bool cheackIfValid ()
+{
+    
+}
+
 //Destroy the whole list
 void destroyList(Node ptr)
 {
@@ -23,11 +26,6 @@ void destroyList(Node ptr)
         free(to_delete);
     }
 }
-
-
-
-
-
 
 ErrorCode mergeSortedLists(Node list1, Node list2, Node *mergedOut)
 {
@@ -46,7 +44,3 @@ ErrorCode mergeSortedLists(Node list1, Node list2, Node *mergedOut)
     
     return SUCCESS;
 }
-
-#endif
-
-

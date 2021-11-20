@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/adi/Desktop/Adi/Technion/Technion_semester_2/mtm_ex1/Dry_part_q2.2.c" "CMakeFiles/my_executable.dir/Dry_part_q2.2.c.obj" "gcc" "CMakeFiles/my_executable.dir/Dry_part_q2.2.c.obj.d"
+  "C:/Users/adi/Desktop/Adi/Technion/Technion_semester_2/mtm_ex1/sorted_linked_list.c" "CMakeFiles/my_executable.dir/sorted_linked_list.c.obj" "gcc" "CMakeFiles/my_executable.dir/sorted_linked_list.c.obj.d"
   )
 
 # Targets to which this target links.

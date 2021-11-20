@@ -68,28 +68,28 @@ include CMakeFiles/my_executable.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/my_executable.dir/flags.make
 
-CMakeFiles/my_executable.dir/Dry_part_q2.2.c.obj: CMakeFiles/my_executable.dir/flags.make
-CMakeFiles/my_executable.dir/Dry_part_q2.2.c.obj: ../Dry_part_q2.2.c
-CMakeFiles/my_executable.dir/Dry_part_q2.2.c.obj: CMakeFiles/my_executable.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\adi\Desktop\Adi\Technion\Technion_semester_2\mtm_ex1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/my_executable.dir/Dry_part_q2.2.c.obj"
-	C:\TDM-GCC-64\bin\x86_64-w64-mingw32-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/my_executable.dir/Dry_part_q2.2.c.obj -MF CMakeFiles\my_executable.dir\Dry_part_q2.2.c.obj.d -o CMakeFiles\my_executable.dir\Dry_part_q2.2.c.obj -c C:\Users\adi\Desktop\Adi\Technion\Technion_semester_2\mtm_ex1\Dry_part_q2.2.c
+CMakeFiles/my_executable.dir/sorted_linked_list.c.obj: CMakeFiles/my_executable.dir/flags.make
+CMakeFiles/my_executable.dir/sorted_linked_list.c.obj: ../sorted_linked_list.c
+CMakeFiles/my_executable.dir/sorted_linked_list.c.obj: CMakeFiles/my_executable.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\adi\Desktop\Adi\Technion\Technion_semester_2\mtm_ex1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/my_executable.dir/sorted_linked_list.c.obj"
+	C:\TDM-GCC-64\bin\x86_64-w64-mingw32-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/my_executable.dir/sorted_linked_list.c.obj -MF CMakeFiles\my_executable.dir\sorted_linked_list.c.obj.d -o CMakeFiles\my_executable.dir\sorted_linked_list.c.obj -c C:\Users\adi\Desktop\Adi\Technion\Technion_semester_2\mtm_ex1\sorted_linked_list.c
 
-CMakeFiles/my_executable.dir/Dry_part_q2.2.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/my_executable.dir/Dry_part_q2.2.c.i"
-	C:\TDM-GCC-64\bin\x86_64-w64-mingw32-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\adi\Desktop\Adi\Technion\Technion_semester_2\mtm_ex1\Dry_part_q2.2.c > CMakeFiles\my_executable.dir\Dry_part_q2.2.c.i
+CMakeFiles/my_executable.dir/sorted_linked_list.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/my_executable.dir/sorted_linked_list.c.i"
+	C:\TDM-GCC-64\bin\x86_64-w64-mingw32-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\adi\Desktop\Adi\Technion\Technion_semester_2\mtm_ex1\sorted_linked_list.c > CMakeFiles\my_executable.dir\sorted_linked_list.c.i
 
-CMakeFiles/my_executable.dir/Dry_part_q2.2.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/my_executable.dir/Dry_part_q2.2.c.s"
-	C:\TDM-GCC-64\bin\x86_64-w64-mingw32-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\adi\Desktop\Adi\Technion\Technion_semester_2\mtm_ex1\Dry_part_q2.2.c -o CMakeFiles\my_executable.dir\Dry_part_q2.2.c.s
+CMakeFiles/my_executable.dir/sorted_linked_list.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/my_executable.dir/sorted_linked_list.c.s"
+	C:\TDM-GCC-64\bin\x86_64-w64-mingw32-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\adi\Desktop\Adi\Technion\Technion_semester_2\mtm_ex1\sorted_linked_list.c -o CMakeFiles\my_executable.dir\sorted_linked_list.c.s
 
 # Object files for target my_executable
 my_executable_OBJECTS = \
-"CMakeFiles/my_executable.dir/Dry_part_q2.2.c.obj"
+"CMakeFiles/my_executable.dir/sorted_linked_list.c.obj"
 
 # External object files for target my_executable
 my_executable_EXTERNAL_OBJECTS =
 
-my_executable.exe: CMakeFiles/my_executable.dir/Dry_part_q2.2.c.obj
+my_executable.exe: CMakeFiles/my_executable.dir/sorted_linked_list.c.obj
 my_executable.exe: CMakeFiles/my_executable.dir/build.make
 my_executable.exe: CMakeFiles/my_executable.dir/linklibs.rsp
 my_executable.exe: CMakeFiles/my_executable.dir/objects1.rsp
