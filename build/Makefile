@@ -128,53 +128,29 @@ my_executable/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_executable.dir\build.make CMakeFiles/my_executable.dir/build
 .PHONY : my_executable/fast
 
-sorted_linked_list.obj: sorted_linked_list.c.obj
-.PHONY : sorted_linked_list.obj
+Dry_part_q2.1.obj: Dry_part_q2.1.c.obj
+.PHONY : Dry_part_q2.1.obj
 
 # target to build an object file
-sorted_linked_list.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_executable.dir\build.make CMakeFiles/my_executable.dir/sorted_linked_list.c.obj
-.PHONY : sorted_linked_list.c.obj
+Dry_part_q2.1.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_executable.dir\build.make CMakeFiles/my_executable.dir/Dry_part_q2.1.c.obj
+.PHONY : Dry_part_q2.1.c.obj
 
-sorted_linked_list.i: sorted_linked_list.c.i
-.PHONY : sorted_linked_list.i
-
-# target to preprocess a source file
-sorted_linked_list.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_executable.dir\build.make CMakeFiles/my_executable.dir/sorted_linked_list.c.i
-.PHONY : sorted_linked_list.c.i
-
-sorted_linked_list.s: sorted_linked_list.c.s
-.PHONY : sorted_linked_list.s
-
-# target to generate assembly for a file
-sorted_linked_list.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_executable.dir\build.make CMakeFiles/my_executable.dir/sorted_linked_list.c.s
-.PHONY : sorted_linked_list.c.s
-
-sorted_linked_list_main.obj: sorted_linked_list_main.c.obj
-.PHONY : sorted_linked_list_main.obj
-
-# target to build an object file
-sorted_linked_list_main.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_executable.dir\build.make CMakeFiles/my_executable.dir/sorted_linked_list_main.c.obj
-.PHONY : sorted_linked_list_main.c.obj
-
-sorted_linked_list_main.i: sorted_linked_list_main.c.i
-.PHONY : sorted_linked_list_main.i
+Dry_part_q2.1.i: Dry_part_q2.1.c.i
+.PHONY : Dry_part_q2.1.i
 
 # target to preprocess a source file
-sorted_linked_list_main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_executable.dir\build.make CMakeFiles/my_executable.dir/sorted_linked_list_main.c.i
-.PHONY : sorted_linked_list_main.c.i
+Dry_part_q2.1.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_executable.dir\build.make CMakeFiles/my_executable.dir/Dry_part_q2.1.c.i
+.PHONY : Dry_part_q2.1.c.i
 
-sorted_linked_list_main.s: sorted_linked_list_main.c.s
-.PHONY : sorted_linked_list_main.s
+Dry_part_q2.1.s: Dry_part_q2.1.c.s
+.PHONY : Dry_part_q2.1.s
 
 # target to generate assembly for a file
-sorted_linked_list_main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_executable.dir\build.make CMakeFiles/my_executable.dir/sorted_linked_list_main.c.s
-.PHONY : sorted_linked_list_main.c.s
+Dry_part_q2.1.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_executable.dir\build.make CMakeFiles/my_executable.dir/Dry_part_q2.1.c.s
+.PHONY : Dry_part_q2.1.c.s
 
 # Help Target
 help:
@@ -185,12 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... my_executable
-	@echo ... sorted_linked_list.obj
-	@echo ... sorted_linked_list.i
-	@echo ... sorted_linked_list.s
-	@echo ... sorted_linked_list_main.obj
-	@echo ... sorted_linked_list_main.i
-	@echo ... sorted_linked_list_main.s
+	@echo ... Dry_part_q2.1.obj
+	@echo ... Dry_part_q2.1.i
+	@echo ... Dry_part_q2.1.s
 .PHONY : help
 
 

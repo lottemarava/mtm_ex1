@@ -19,14 +19,16 @@ bool isListSorted(Node list){
     if (list == NULL)
         return true;
     for (Node index =list ; index->next != NULL; index=index->next)
+    {
         if (index->x > index->next->x)
             return false;
+    }
     return true;
 }
 
 Node createNode(int value)
 {
-    Node ptr = malloc(sizeof(ptr));
+    Node ptr = malloc(sizeof(*ptr));
     if (ptr == NULL)
         return NULL;
     ptr->x = value;
@@ -53,41 +55,38 @@ const int duplicate(int value)
 
 int compareNodes(Node list1, Node list2)
 {
-    if(list2 == NULL || list1->x > list2->x)
+    int temp;
+    if(list1 == NULL || list1->x > list2->x)
     {
-        list1++;
-        return duplicate(list1->x);
+        temp= duplicate(list2->x);
+        list2++;
+        return temp;
     }
-    list2++;
-    return duplicate(list2->x);
+    temp= duplicate(list1->x);
+    list1++;
+    return temp;
 }
 
 void destroyList(Node ptr)
 {
     while(ptr){
         Node to_delete= ptr;
-        ptr= ptr->next;
+        ptr = ptr->next;
         free(to_delete);
     }
 }
 
-bool cheackIflistsAreNull (Node list1, Node list2, Node *mergedOut)
+bool cheackIflistsAreNull (Node list1, Node list2)
 {
     if (getListLength(list1) == false || getListLength(list2) == false)
-    {
-        mergedOut=NULL;
         return true;
-    }
     false;
 }
 
-bool cheackIfCreateReturnNUll (Node list, Node *mergedOut)
+bool cheackIfCreateReturnNUll(Node list)
 {
     if(list == NULL)
-    {
-        mergedOut = NULL;
         return true;  
-    }
     return false;
 }
 
@@ -95,17 +94,33 @@ bool cheackIfCreateReturnNUll (Node list, Node *mergedOut)
 ErrorCode mergeSortedLists(Node list1, Node list2, Node *mergedOut)
 {
     Node ptr_list1= list1, ptr_list2= list2;
-    if (cheackIflistsAreNull (ptr_list1, ptr_list2, mergedOut))  
+    if (isListSorted(ptr_list1) == false || isListSorted(ptr_list2) == false)
+        return UNSORTED_LIST;
+    if (cheackIflistsAreNull (ptr_list1, ptr_list2)) 
+    { 
+        mergedOut = NULL;
         return EMPTY_LIST;
+    }
     Node new_list = NULL;
     while(ptr_list1 != NULL || ptr_list2 != NULL)
     {
         int next_smaller_value = compareNodes(ptr_list1, ptr_list2);
         Node next_node = createNode(next_smaller_value);
-        new_list= addNextNode (new_list, next_node);
-        if (cheackIfCreateReturnNUll (new_list, mergedOut))
+        if(cheackIfCreateReturnNUll(next_node))
+        {
+            destroyList(new_list);
+            mergedOut = NULL;
             return MEMORY_ERROR;
+        }
+        new_list= addNextNode (new_list, next_node);
+        if (cheackIfCreateReturnNUll (new_list))
+        { 
+            destroyList(next_node);
+            destroyList(new_list);
+            mergedOut = NULL;
+            return MEMORY_ERROR;
+        }
     }
-    *mergedOut= new_list;
+    *mergedOut = new_list;
     return SUCCESS;
 }

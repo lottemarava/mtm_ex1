@@ -2,6 +2,7 @@
 #define SORTED_LINK_LIST
 #include <stdbool.h>
 
+
 typedef struct node_t {
     int x;
     struct node_t *next;
@@ -36,7 +37,7 @@ void destroyList(Node list);
 Node createNode(int value);
 
 /* Return valus- if list is NULL return new_node, else add new_node to the end of list and return pointer to the head of list */
-/* Error values- */
+/* Error values- null if create next node was failed*/
 Node addNextNode (Node head, Node new_node);
 
 /* Return valus- */
@@ -49,10 +50,10 @@ int compareNodes(Node list1, Node list2);
 
 /* Return valus- if list one of the lists is NULL mergedOut=NULL and return true */
 /* Error values- */
-bool cheackIflistsAreNull (Node list1, Node list2, Node *mergedOut);
+bool cheackIflistsAreNull (Node list1, Node list2);
 
 /* Return valus- if create return NULL mergedOut=NULL and return true */
 /* Error values- */
-bool cheackIfCreateReturnNUll (Node list, Node *mergedOut);
+bool cheackIfCreateReturnNUll (Node list);
 
 #endif
