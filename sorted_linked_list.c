@@ -34,9 +34,15 @@ Node createNode(int value)
     return ptr;
 }
 
-bool cheackIfValid ()
+Node addNextNode (Node head, Node new_node)
 {
-
+    if(head == NULL)
+        return new_node;
+    Node ptr = head;
+    while(ptr->next)
+        ptr = ptr->next;
+    ptr->next = new_node;
+    return head;  
 }
 
 //Destroy the whole list
@@ -49,28 +55,44 @@ void destroyList(Node ptr)
     }
 }
 
+bool cheackIflistsAreNull (Node list1, Node list2, Node *mergedOut)
+{
+    if (getListLength(list1) ==  NULL || getListLength(list2) ==  NULL)
+    {
+        mergedOut=NULL;
+        return true;
+    }
+    false;
+}
+
+bool cheackIfCreateReturnNUll (Node list, Node *mergedOut)
+{
+    if(list == NULL)
+    {
+        mergedOut = NULL;
+        return true;  
+    }
+    return false;
+}
+
+
 ErrorCode mergeSortedLists(Node list1, Node list2, Node *mergedOut)
 {
     Node ptr_list1= list1, ptr_list2= list2;
-    if (getListLength(ptr_list1) ==  NULL || getListLength(ptr_list2) ==  NULL)
-    {
-        mergedOut=NULL;
+    if (cheackIflistsAreNull (ptr_list1, ptr_list2, mergedOut))  
         return EMPTY_LIST;
-    }
     int smaller_value_list= compareNodes(ptr_list1, ptr_list2);
     Node new_list = createNode(smaller_value_list);
-    if (new_list == NULL){
-        mergedOut= NULL;
+    if (cheackIfCreateReturnNUll (new_list, mergedOut))
         return MEMORY_ERROR;
+    while(ptr_list1 != NULL || ptr_list2 != NULL)
+    {
+        int next_smaller_value = compareNodes(ptr_list1, ptr_list2);
+        Node next_node = createNode(next_smaller_value);
+        new_list= addNextNode (new_list, next_node);
+        if (cheackIfCreateReturnNUll (new_list, mergedOut))
+            return MEMORY_ERROR;
     }
-    isValid();
-
-    int value_sorted= coppyNode(smaller_value_list);
-    createNode(value_sorted);
-    if (new_list == NULL){
-        mergedOut= NULL;
-        return MEMORY_ERROR;
-    }
-
-
+    mergedOut= new_list;
+    return SUCCESS;
 }
