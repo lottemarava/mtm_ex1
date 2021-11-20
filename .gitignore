@@ -27,3 +27,5 @@ build/CMakeFiles/my_executable.dir/objects.a
 .gitignore
 build/CMakeFiles/my_executable.dir/Dry_part_q2.1.c.obj
 CmakeLists.txt
+build/CMakeFiles/my_executable.dir/sorted_linked_list.c.obj
+build/CMakeFiles/my_executable.dir/objects.a

@@ -39,6 +39,14 @@ Node createNode(int value);
 /* Error values- */
 Node addNextNode (Node head, Node new_node);
 
+/* Return valus- */
+/* Error values- */
+const int duplicate(int value);
+
+/* Return valus- if list is NULL return new_node, else add new_node to the end of list and return pointer to the head of list */
+/* Error values- */
+int compareNodes(Node list1, Node list2);
+
 /* Return valus- if list one of the lists is NULL mergedOut=NULL and return true */
 /* Error values- */
 bool cheackIflistsAreNull (Node list1, Node list2, Node *mergedOut);

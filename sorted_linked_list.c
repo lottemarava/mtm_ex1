@@ -34,7 +34,7 @@ Node createNode(int value)
     return ptr;
 }
 
-Node addNextNode (Node head, Node new_node)
+Node addNextNode(Node head, Node new_node)
 {
     if(head == NULL)
         return new_node;
@@ -45,7 +45,23 @@ Node addNextNode (Node head, Node new_node)
     return head;  
 }
 
-//Destroy the whole list
+const int duplicate(int value)
+{
+    int temp_value = value;
+    return temp_value;
+}
+
+int compareNodes(Node list1, Node list2)
+{
+    if(list2 == NULL || list1->x > list2->x)
+    {
+        list1++;
+        return duplicate(list1->x);
+    }
+    list2++;
+    return duplicate(list2->x);
+}
+
 void destroyList(Node ptr)
 {
     while(ptr){
@@ -57,7 +73,7 @@ void destroyList(Node ptr)
 
 bool cheackIflistsAreNull (Node list1, Node list2, Node *mergedOut)
 {
-    if (getListLength(list1) ==  NULL || getListLength(list2) ==  NULL)
+    if (getListLength(list1) == false || getListLength(list2) == false)
     {
         mergedOut=NULL;
         return true;
@@ -81,10 +97,7 @@ ErrorCode mergeSortedLists(Node list1, Node list2, Node *mergedOut)
     Node ptr_list1= list1, ptr_list2= list2;
     if (cheackIflistsAreNull (ptr_list1, ptr_list2, mergedOut))  
         return EMPTY_LIST;
-    int smaller_value_list= compareNodes(ptr_list1, ptr_list2);
-    Node new_list = createNode(smaller_value_list);
-    if (cheackIfCreateReturnNUll (new_list, mergedOut))
-        return MEMORY_ERROR;
+    Node new_list = NULL;
     while(ptr_list1 != NULL || ptr_list2 != NULL)
     {
         int next_smaller_value = compareNodes(ptr_list1, ptr_list2);
@@ -93,6 +106,6 @@ ErrorCode mergeSortedLists(Node list1, Node list2, Node *mergedOut)
         if (cheackIfCreateReturnNUll (new_list, mergedOut))
             return MEMORY_ERROR;
     }
-    mergedOut= new_list;
+    *mergedOut= new_list;
     return SUCCESS;
 }
