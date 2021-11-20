@@ -6,7 +6,7 @@
 #include <assert.h>
 #include <stdio.h>
 
-char *stringduplicator(char *s, int times){  //convention1   //convention2
+/*char *stringduplicator(char *s, int times){  //convention1   //convention2
     assert(!s);    //coding1
     assert(times > 0);
     int LEN = strlen(*s);   //coding2   //convention3  
@@ -17,7 +17,7 @@ char *stringduplicator(char *s, int times){  //convention1   //convention2
     strcpy(out, s);
     }
     return out;   //coding5
-}
+}*/
 //conventions errors-
 //convention1- function name should start with upper lettter from the second word and on.
 //convention2- wording function names as verbs, not action names.
@@ -53,9 +53,9 @@ char *duplicateTheString(char *s, int times)
 
 int main()
 {
-    char* string= "";
+    char* string= "adi";
     int times= 3;
-    char* duplication=duplicateTheString(string, times);
+    char* duplication = duplicateTheString(string, times);
     printf("%s", duplication);
     return 0;
 }

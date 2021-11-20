@@ -25,6 +25,10 @@ CMakeFiles/my_executable.dir/sorted_linked_list.c.obj: ../sorted_linked_list.c \
   C:/TDM-GCC-64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
   C:/TDM-GCC-64/x86_64-w64-mingw32/include/assert.h
 
+CMakeFiles/my_executable.dir/sorted_linked_list_main.c.obj: ../sorted_linked_list_main.c \
+  ../sorted_linked_list.h \
+  C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/stdbool.h
+
 
 C:/TDM-GCC-64/x86_64-w64-mingw32/include/corecrt.h:
 
@@ -71,3 +75,5 @@ C:/TDM-GCC-64/x86_64-w64-mingw32/include/_mingw_off_t.h:
 C:/TDM-GCC-64/x86_64-w64-mingw32/include/sec_api/stdio_s.h:
 
 C:/TDM-GCC-64/x86_64-w64-mingw32/include/assert.h:
+
+../sorted_linked_list_main.c:

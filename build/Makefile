@@ -152,6 +152,30 @@ sorted_linked_list.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_executable.dir\build.make CMakeFiles/my_executable.dir/sorted_linked_list.c.s
 .PHONY : sorted_linked_list.c.s
 
+sorted_linked_list_main.obj: sorted_linked_list_main.c.obj
+.PHONY : sorted_linked_list_main.obj
+
+# target to build an object file
+sorted_linked_list_main.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_executable.dir\build.make CMakeFiles/my_executable.dir/sorted_linked_list_main.c.obj
+.PHONY : sorted_linked_list_main.c.obj
+
+sorted_linked_list_main.i: sorted_linked_list_main.c.i
+.PHONY : sorted_linked_list_main.i
+
+# target to preprocess a source file
+sorted_linked_list_main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_executable.dir\build.make CMakeFiles/my_executable.dir/sorted_linked_list_main.c.i
+.PHONY : sorted_linked_list_main.c.i
+
+sorted_linked_list_main.s: sorted_linked_list_main.c.s
+.PHONY : sorted_linked_list_main.s
+
+# target to generate assembly for a file
+sorted_linked_list_main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_executable.dir\build.make CMakeFiles/my_executable.dir/sorted_linked_list_main.c.s
+.PHONY : sorted_linked_list_main.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -164,6 +188,9 @@ help:
 	@echo ... sorted_linked_list.obj
 	@echo ... sorted_linked_list.i
 	@echo ... sorted_linked_list.s
+	@echo ... sorted_linked_list_main.obj
+	@echo ... sorted_linked_list_main.i
+	@echo ... sorted_linked_list_main.s
 .PHONY : help
 
 
