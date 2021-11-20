@@ -35,8 +35,16 @@ void destroyList(Node list);
 /* Error values- */
 Node createNode(int value);
 
-/* Return valus- */
+/* Return valus- if list is NULL return new_node, else add new_node to the end of list and return pointer to the head of list */
 /* Error values- */
 Node addNextNode (Node head, Node new_node);
+
+/* Return valus- if list one of the lists is NULL mergedOut=NULL and return true */
+/* Error values- */
+bool cheackIflistsAreNull (Node list1, Node list2, Node *mergedOut);
+
+/* Return valus- if create return NULL mergedOut=NULL and return true */
+/* Error values- */
+bool cheackIfCreateReturnNUll (Node list, Node *mergedOut);
 
 #endif
