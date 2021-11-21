@@ -9,6 +9,7 @@ typedef struct AmountSet {
     struct amount_set* previous;
 } *AmountSet;
 
+
 AmountSet asCreate() {
     AmountSet set = malloc(sizeof(AmountSet)); // לא סגורה פה על הסייזאוף
     if (set == NULL) return NULL;
@@ -36,7 +37,7 @@ AmountSet asCopy(AmountSet set){ //צריך לפתור
     AmountSet temp_point_old = set;
     AmountSet temp_point_new = new_set;
     for (int i=0; i<=size; i++){
-        temp_point_new->description
+        temp_point_new->description;
     }
 }
 
@@ -88,6 +89,6 @@ AmountSetResult asGetAmount(AmountSet set, const char* element, double* outAmoun
     while ((strcmp(temp_pointer->description, element)!=0)) {
         temp_pointer = temp_pointer->next;
     }
-    &outAmount = temp_pointer->item_amount;
+    outAmount = temp_pointer->item_amount;
     return AS_SUCCESS;
 }
